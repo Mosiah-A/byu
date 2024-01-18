@@ -27,4 +27,3 @@ def lp100k_from_mpg(mpg):
 
 #call the main function to execute the code
 main()
-h

@@ -16,10 +16,15 @@ def make_sentence(quantity, tense):
     quantity and tense of the verb will match the number
     and tense in the quantity and tense parameters.
     """
-    determiner = get_determiner(quantity)
+    determiner = get_determiner(quantity) 
     noun = get_noun(quantity)
     verb = get_verb(quantity, tense)
-    sentence = f'{determiner} {noun} {verb}'
+    preposition_choice = get_preposition()
+    determiner_preposition = get_determiner(quantity)
+    noun_preposotion = get_noun(quantity)
+    adjective = get_adjective()
+
+    sentence = f'{determiner} {adjective} {noun} {verb} {preposition_choice} {determiner_preposition} {noun_preposotion}'
     print(sentence)
 
 def get_determiner(quantity):
@@ -52,5 +57,23 @@ def get_verb(quantity, tense):
     elif tense == 'future':
         verbs = ["will drink", "will eat", "will grow", "will laugh", "will think", "will run", "will sleep", "will talk", "will walk", "will write"]
     return random.choice(verbs)
+
+#prove add
+
+def get_preposition():
+    preposition = ["about", "above", "across", "after", "along",
+    "around", "at", "before", "behind", "below",
+    "beyond", "by", "despite", "except", "for",
+    "from", "in", "into", "near", "of",
+    "off", "on", "onto", "out", "over",
+    "past", "to", "under", "with", "without"]
+
+    return random.choice(preposition)
+
+    #creativity
+def get_adjective():
+    adjectives = ["happy", "bright", "playful", "gigantic", "mysterious", "exquisite", "cozy", "radiant", "melodious", "serene"]
+
+    return random.choice(adjectives)
 
 main()

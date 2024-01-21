@@ -29,4 +29,4 @@ def player_data(name, player_number):
         print(f'Life Point = {randint(50, 100)}')
         print()
 
-main()
+main() 

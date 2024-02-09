@@ -1,10 +1,40 @@
-Traceback (most recent call last):
-  File "c:\Users\mosia\OneDrive\Área de Trabalho\byu-1\pc111\w05\receipt.py", line 25, in <module>
+import csv
+
+def main():
+    id = input('Please enter an I-Number (xxxxxx):')
+    dictionary = read_dictionary('students.csv')
+    name_of_student = dictionary.get(id, 'No such student') 
+    print(name_of_student)
+
+
+
+def read_dictionary(filename):
+        """Read the contents of a CSV file into a compound
+        dictionary and return the dictionary.
+    
+        Parameters
+            filename: the name of the CSV file to read.
+            key_column_index: the index of the column
+                to use as the keys in the dictionary.
+        Return: a compound dictionary that contains
+            the contents of the CSV file.
+        """
+        dictionary= {}
+        with open(filename, 'rt') as csv_file:
+            csv_reader = csv.reader(csv_file)
+
+            next(csv_reader)
+
+            for row in csv_reader:
+                
+                student_id, name = row
+                dictionary[student_id]= name
+        return dictionary
+                
+                  
+
+
+
+
+if __name__ == "__main__":
     main()
-  File "c:\Users\mosia\OneDrive\Área de Trabalho\byu-1\pc111\w05\receipt.py", line 6, in main
-    dictionary = read_dictionary('products.csv')
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "c:\Users\mosia\OneDrive\Área de Trabalho\byu-1\pc111\w05\receipt.py", line 12, in read_dictionary
-    with open(filename, 'rt') as csv_file:
-         ^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'products.csv'

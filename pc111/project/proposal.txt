@@ -1,0 +1,54 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?  
+    Simple Task Manager
+
+2. What real-world problem will your program address or help to solve? 
+    Managing tasks and deadlines efficiently. Helps users keep track of tasks, 
+    set deadlines, and prioritize their work.
+
+3. What will you learn from developing this program?
+    Task scheduling and management
+    Handling dates and times in Python
+
+4. What Python modules will your program use?
+    datetime (for handling dates and times)
+    csv (for storing tasks in a file)
+
+    (Some examples are: csv, datetime, functools, matplotlib, math,
+    pandas, pytest, random, requests, and tkinter.)
+
+5. List the names of functions you will need?
+    add_task(task_description, deadline): Adds a new task with a description and deadline.
+    view_tasks(): Displays the list of tasks along with their deadlines.
+    complete_task(task_id): Marks a task as completed.
+    remove_task(task_id): Removes a task from the list.
+    priority_task(task_id, priority): Sets the priority level for a task.
+
+    (Remember that the most reusable functions don't get user input and
+    don't print results but instead have parameters and return a result.
+    Functions that get user input and print results are important and do
+    useful work but are not easily reusable.)
+
+    (Remember also that it's hard to test functions that get user input
+    and print results. It's easy to test functions that don't get user
+    input and don't print results but instead have parameters and return
+    a result. Therefore, you should write most of your program functions
+    to have parameters and return a result.)
+
+6. List the names of the test functions you will write.
+    test_add_task(): Tests the functionality of adding tasks.
+    test_view_tasks(): Tests the functionality of viewing tasks.
+    test_complete_task(): Tests the functionality of completing tasks.
+    test_remove_task(): Tests the functionality of removing tasks.
+    test_priority_task(): Tests the functionality of setting task priorities.
+

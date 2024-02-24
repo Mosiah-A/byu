@@ -60,3 +60,4 @@ def exibir_informacoes_dos_alunos(aluno):
 
 if __name__ == '__main__':
     main()
+    

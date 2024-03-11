@@ -1,0 +1,62 @@
+body{
+    font-family: 'Poppins';
+    padding: 20px;
+    background-color: bisque;
+    margin: 0;
+}
+
+#title{
+    font-size: 50px;
+    color: #eff1f0;
+    box-sizing: content-box;
+    background-color: rgb(68, 68, 10);
+    padding: 20px;
+}
+nav{
+    background-color: black;
+    display: inline;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+}
+
+nav a{
+    display: block;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 1.5rem;
+}
+nav a:link, nav a:visited {
+    color: rgb(243, 241, 241);
+}
+
+nav a:hover {
+    color: #00ff6a;
+    background-color: rgb(1, 44, 28);
+    padding:1.5rem
+}
+
+#logo{
+    align-items: center;
+    display: inline;
+}
+
+aside{
+    background-color: rgb(57, 57, 57);
+    width: 200px;
+    color: #eff1f0;
+}
+aside a{
+    display: block;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: .5rem;
+}
+aside a:hover {
+    color: #00ff6a;
+    background-color: rgb(1, 44, 28);
+    padding: .5rem
+}
+aside a:link, nav a:visited {
+    color: rgb(243, 241, 241);
+}

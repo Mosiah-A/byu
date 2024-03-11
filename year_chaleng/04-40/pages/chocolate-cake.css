@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Poppins';
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  .recipe-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-details img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .recipe-details ul,
+  .recipe-details ol {
+    margin-bottom: 20px;
+  }
+  
+  .recipe-details li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 20;
+    padding-bottom: 0px;
+  }
+  
+  nav{
+    background-color: black;
+    display: inline;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+}
+
+nav a{
+    display: block;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 1.5rem;
+}
+nav a:link, nav a:visited {
+    color: rgb(243, 241, 241);
+}
+
+nav a:hover {
+    color: #00ff6a;
+    background-color: rgb(1, 44, 28);
+    padding:1.5rem
+}

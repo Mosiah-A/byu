@@ -19,12 +19,16 @@ body {
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
   }
   
-  .recipe-details img {
-    width: 100%;
+ .cake {
+    width: 350px;
     height: auto;
     margin-bottom: 20px;
+    padding-top: 100px;
+    padding-right: 20px;
+    float: right;
   }
   
   .recipe-details h2 {
@@ -44,16 +48,13 @@ body {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding-top: 10px;
     width: 100%;
-    bottom: 20;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
   }
   
   nav{
     background-color: black;
-    display: inline;
     display: flex;
     font-size: 15px;
     align-items: center;
